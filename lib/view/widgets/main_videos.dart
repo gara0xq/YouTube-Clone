@@ -13,33 +13,31 @@ class MainVideos extends StatelessWidget {
     double width = MediaQuery.of(context).size.width;
     double height = MediaQuery.of(context).size.height;
 
-    return SizedBox(
-      height: height - 250,
-      child: GridView.builder(
-        physics: const NeverScrollableScrollPhysics(),
-        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-          crossAxisCount: width < 700
-              ? 1
-              : width < 1100
-                  ? 2
-                  : width < 1400
-                      ? 3
-                      : width < 1700
-                          ? 4
-                          : 5,
-        ),
-        itemCount: videos.length,
-        itemBuilder: (_, i) {
-          return Videobox(
-            title: videos[i].title,
-            channelName: videos[i].channelName,
-            channelImage: videos[i].channelImage,
-            videoImage: videos[i].videoImage,
-            dateSince: videos[i].dateSince,
-            views: videos[i].views!,
-          );
-        },
+    return GridView.builder(
+      shrinkWrap: true,
+      physics: const NeverScrollableScrollPhysics(),
+      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+        crossAxisCount: width < 700
+            ? 1
+            : width < 1100
+                ? 2
+                : width < 1400
+                    ? 3
+                    : width < 1700
+                        ? 4
+                        : 5,
       ),
+      itemCount: videos.length,
+      itemBuilder: (_, i) {
+        return Videobox(
+          title: videos[i].title,
+          channelName: videos[i].channelName,
+          channelImage: videos[i].channelImage,
+          videoImage: videos[i].videoImage,
+          dateSince: videos[i].dateSince,
+          views: videos[i].views!,
+        );
+      },
     );
   }
 }
