@@ -1,16 +1,19 @@
-# youtube
+## Overview
+###### YouTube Clone is a Flutter application inspired by YouTube, providing a video streaming experience with video listings, search functionality, and a user-friendly interface.
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Features
+- Video listing with thumbnails and descriptions.
+- Search bar for video discovery.
+- Responsive UI.
+## Tech Stack
+##### Framework: Flutter
+##### State Management: GetX
+API: Youtube API
+### Dependencies: 
+- cached_network_image
+- get
+- http
+## Screanshots
+![Screenshot from 2024-12-09 19-53-35](https://github.com/user-attachments/assets/c7eb22cc-53c4-406a-be03-4d7dd97c0fc5)
+<img src="https://github.com/user-attachments/assets/e608addf-bd75-4837-a45e-55fcc33eaa91" height=600/>
+<img src="https://github.com/user-attachments/assets/b66c2a47-98b2-4411-8238-50c641371404" height=600/>
