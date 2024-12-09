@@ -8,7 +8,7 @@
 ## Tech Stack
 ##### Framework: Flutter
 ##### State Management: GetX
-API: Youtube API
+##### API: Youtube API
 ### Dependencies: 
 - cached_network_image
 - get
